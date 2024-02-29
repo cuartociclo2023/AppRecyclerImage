@@ -10,9 +10,7 @@ import pe.edu.idat.apprecyclerimage.databinding.ItemAndroidBinding
 
 class AndroidAdapter(var listaAndroid: List<Android>, val context: Context)
     : RecyclerView.Adapter<AndroidAdapter.ViewHolder>() {
-
     inner class ViewHolder(val binding: ItemAndroidBinding) : RecyclerView.ViewHolder(binding.root)
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemAndroidBinding.inflate(LayoutInflater.from(parent.context),
             parent, false)
